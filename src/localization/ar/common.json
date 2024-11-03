@@ -1,0 +1,29 @@
+{
+  "nav_bar": {
+    "logo": "منــظـومــة العـيـش",
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "contact": " اتصل بنا",
+    "faq": "الأسئلة الشائعة",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب"
+  },
+
+  "theme_switcher": {
+    "theme_toggle": "تبديل السمة",
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام"
+  },
+
+  "language_switcher": {
+    "select_language": "اختر اللغة",
+    "en": "English",
+    "ar": "العربية"
+  },
+
+  "personal_info": {
+    "profile_page": "تعديل الملف الشخصي",
+    "logout": "تسجيل الخروج"
+  }
+}

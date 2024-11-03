@@ -1,0 +1,29 @@
+{
+  "nav_bar": {
+    "logo": "LOAVES",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "login": "Login",
+    "signup": "Signup"
+  },
+
+  "theme_switcher": {
+    "theme_toggle": "Theme Switcher",
+    "light": "Light",
+    "dark": "Dark",
+    "sustem": "System"
+  },
+
+  "language_switcher": {
+    "select_language": "Select Language",
+    "en": "English",
+    "ar": "العربية"
+  },
+
+  "personal_info": {
+    "profile_page": "Edit Profile",
+    "logout": "Logout"
+  }
+}
