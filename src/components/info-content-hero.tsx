@@ -6,7 +6,7 @@ const InfoContentHero = () => {
   const { t } = useTranslation("home");
 
   return (
-    <div className="flex items-center justify-center flex-col px-5 gap-5 w-full md:w-1/2">
+    <div className="flex items-center justify-center flex-col px-5 gap-5 w-full md:w-3/4 lg:w-1/2">
       <motion.h1
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
