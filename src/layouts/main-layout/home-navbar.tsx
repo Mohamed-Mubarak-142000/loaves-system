@@ -65,7 +65,6 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import { ROUTE } from "@/routing.js";
@@ -98,7 +97,7 @@ export default function NavbarHome() {
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden pr-24" justify="start">
         <NavbarBrand>
           <AcmeLogo />
           <p className="font-bold text-inherit">{t("nav_bar.logo")}</p>
@@ -141,16 +140,7 @@ export default function NavbarHome() {
             {t("nav_bar.login")}
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Button
-            as={RouterLink}
-            color="warning"
-            to={ROUTE.SIGNUP}
-            variant="flat"
-          >
-            {t("nav_bar.signup")}{" "}
-          </Button>
-        </NavbarItem>
+
         <NavbarItem>
           <div className="flex items-center gap-1 ms-auto">
             <ModeToggle />
