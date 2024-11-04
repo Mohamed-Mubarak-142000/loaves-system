@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden !important;
+}
+
+html {
+  overflow-x: hidden;
+}
 html {
   @apply h-full;
 }
@@ -187,8 +195,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  padding: 10px 0;
 }
 
 .custom-clock {
@@ -197,11 +206,6 @@ body {
 
 .custom-clock .react-clock__face {
   background-color: rgba(23, 23, 23, 0.234); /* Clock face background */
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow-x: hidden !important;
 }
 
 ::-webkit-scrollbar {

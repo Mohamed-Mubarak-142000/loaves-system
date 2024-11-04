@@ -44,7 +44,7 @@ const AllSubscribe = () => {
   };
 
   return (
-    <div className="flex justify-center items-center gap-5 my-10">
+    <div className="flex justify-center flex-wrap p-5 items-center gap-5 my-10">
       {Object.values(data).map((item, index) => (
         <Subscribe
           key={index}

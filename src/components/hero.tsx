@@ -9,13 +9,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-full flex items-center justify-center flex-col gap-5 bg-image">
+    <div className="w-full flex items-center justify-center flex-col gap-5 bg-image ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
         transition={{ delay: 1, duration: 1 }}
-        className="relative flex items-center justify-around w-full"
+        className=" flex items-center justify-around w-full"
       >
         <CreateClock />
       </motion.div>

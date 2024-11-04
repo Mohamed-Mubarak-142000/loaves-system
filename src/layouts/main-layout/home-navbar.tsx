@@ -91,13 +91,13 @@ export default function NavbarHome() {
       onMenuOpenChange={setIsMenuOpen}
       className="bg-[#C4841D] "
     >
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="sm:hidden" justify="center">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-24" justify="start">
+      <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
           <AcmeLogo />
           <p className="font-bold text-inherit">{t("nav_bar.logo")}</p>
