@@ -3,6 +3,7 @@ import AllSubscribe from "@/components/all-subscribe";
 import CardsInfo from "@/components/cards-info";
 import Hero from "@/components/hero";
 import WhoAreWe from "@/components/who-are-we";
+import ContainerContactUs from "@/contact-us/components/container-contact-us";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <WhoAreWe />
       <ContainerLogin />
       <AllSubscribe />
+      <ContainerContactUs />
     </div>
   );
 };

@@ -1,10 +1,19 @@
+import { motion } from "framer-motion";
+
 interface CreateVideoPlayerProps {
   url: string;
   classname: string;
 }
+
 const CreateVideoPlayer = ({ url, classname }: CreateVideoPlayerProps) => {
   return (
-    <div className={classname}>
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false }}
+      transition={{ delay: 0.2, duration: 1 }}
+      className={classname}
+    >
       <iframe
         src={url}
         width="100%"
@@ -13,7 +22,7 @@ const CreateVideoPlayer = ({ url, classname }: CreateVideoPlayerProps) => {
         allowFullScreen
         title="Google Drive Video"
       ></iframe>
-    </div>
+    </motion.div>
   );
 };
 

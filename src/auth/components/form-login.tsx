@@ -13,6 +13,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
 import { FormLoginSchema } from "../dto/auth-validation";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const LoginForm = () => {
   const { t } = useTranslation("auth");
@@ -33,37 +34,62 @@ const LoginForm = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="username"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{t("login.email")}</FormLabel>
-              <FormControl>
-                <Input placeholder={t("login.email_placeholder")} {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.2, duration: 1 }}
+        >
+          <FormField
+            control={form.control}
+            name="username"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("login.email")}</FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder={t("login.email_placeholder")}
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </motion.div>
 
-        <FormField
-          control={form.control}
-          name="password"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{t("login.password")}</FormLabel>
-              <FormControl>
-                <Input
-                  placeholder={t("login.password_placeholder")}
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit">{t("login.login")}</Button>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.2, duration: 1 }}
+        >
+          <FormField
+            control={form.control}
+            name="password"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("login.password")}</FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder={t("login.password_placeholder")}
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.2, duration: 1 }}
+        >
+          <Button type="submit">{t("login.login")}</Button>
+        </motion.div>
       </form>
     </Form>
   );

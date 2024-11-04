@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 
@@ -11,34 +12,67 @@ interface SubscribeProps {
   notes: Notes[];
   valButton: string;
   onclick: () => void;
+  index: number;
 }
 
-const Subscribe = ({ title, notes, valButton, onclick }: SubscribeProps) => {
+const Subscribe = ({
+  title,
+  notes,
+  valButton,
+  onclick,
+  index,
+}: SubscribeProps) => {
   const { t } = useTranslation("home");
   return (
-    <div className="bg-[#9a6819] p-5 rounded-xl w-full md:w-[400px]">
+    <motion.div
+      initial={{ opacity: 0, x: index % 2 == 0 ? -100 : 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.5 }}
+      className="bg-[#9a6819] p-5 rounded-xl w-full md:w-[400px]"
+    >
       <h1 className=" text-2xl font-bold capitalize my-2">{title}</h1>
       <ul>
-        <h2 className="my-2 capitalize">
+        <motion.h2
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.4, duration: 1 }}
+          className="my-2 capitalize"
+        >
           {t("who_we_are_highlights.important_notes")}
-        </h2>
-        {notes?.map((item) => {
+        </motion.h2>
+        {notes?.map((item, index) => {
           return (
-            <li key={item.id} style={{ listStyle: "inside", margin: "20px 0" }}>
+            <motion.li
+              initial={{ opacity: 0, x: index % 2 == 0 ? -100 : 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ delay: index * 0.5, duration: 1 }}
+              key={item.id}
+              style={{ listStyle: "inside", margin: "20px 0" }}
+            >
               {item.title}
-            </li>
+            </motion.li>
           );
         })}
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 2.5, duration: 1 }}
+          className="flex items-center justify-center"
+        >
+          <Button
+            onClick={onclick}
+            variant="default"
+            className=" text-xl py-6 mt-5 w-full "
+          >
+            {valButton}
+          </Button>
+        </motion.div>
       </ul>
-
-      <Button
-        onClick={onclick}
-        variant="default"
-        className=" text-xl py-6 mt-5"
-      >
-        {valButton}
-      </Button>
-    </div>
+    </motion.div>
   );
 };
 

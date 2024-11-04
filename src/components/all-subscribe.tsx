@@ -52,6 +52,7 @@ const AllSubscribe = () => {
           notes={item.frist_data}
           valButton={item.button}
           onclick={() => {}}
+          index={index}
         />
       ))}
     </div>

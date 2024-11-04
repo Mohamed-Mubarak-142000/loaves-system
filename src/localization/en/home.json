@@ -45,5 +45,27 @@
     "first_subscribe_button": "Subscribe now 30$",
     "second_subscribe_button": "Subscribe now 30$",
     "important_notes": "Important Notes"
+  },
+
+  "footer": {
+    "logo": " Khedmitk",
+    "title": "Fresh Baladi Bread Delivery System to Your Home!",
+    "subtitle": "We offer a fresh baladi bread delivery service to make your daily life easier. Through a simple subscription process, you can have fresh baladi bread delivered right to your doorstep. Our service provides easy payment options, excellent bread quality, and year-round delivery."
+  },
+
+  "quick_links": {
+    "title": "Quick Links",
+    "home": "Home",
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "faq": "FAQ",
+    "login": "Login"
+  },
+
+  "contact_us": {
+    "title": "Contact Us",
+    "street": "Al-Mostashfa Street - Al-Rawdah Village - Berkat El-Sab District - Monufia Governorate",
+    "phone": "Phone: +20 01050867135",
+    "email": "Email: mohamedmubarak142000m@gmail.com"
   }
 }

@@ -1,6 +1,8 @@
 import { Grid, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const MainFooter = () => {
+  const { t } = useTranslation("home");
   return (
     <section className="min-h-[40vh] bg-[#C4841D] p-3 place-content-center">
       <Grid container>
@@ -17,13 +19,15 @@ const MainFooter = () => {
           }}
         >
           <Typography variant="h4" gutterBottom>
-            Build and Make Dreams Come True With
-            <span className=" uppercase">coursatak.!</span>
+            {t("footer.title")}
+            <span className=" uppercase font-bold">
+              {t("footer.logo")}
+              .!
+            </span>
           </Typography>
           <Typography variant="h6" gutterBottom>
-            <span className=" uppercase">coursatak</span> is a free online
-            course and training service which aims to help you achieve your
-            dreams in the field of technology.
+            <span className=" uppercase"> {t("footer.logo")}</span>{" "}
+            {t("footer.subtitle")}
           </Typography>
         </Grid>
 
@@ -41,16 +45,19 @@ const MainFooter = () => {
           }}
         >
           <Typography variant="h5" gutterBottom>
-            Quick Links
+            {t("quick_links.home")}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Home
+            {t("quick_links.about_us")}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            About
+            {t("quick_links.contact_us")}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Contact
+            {t("quick_links.faq")}
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            {t("quick_links.login")}
           </Typography>
         </Grid>
 
@@ -68,16 +75,22 @@ const MainFooter = () => {
           }}
         >
           <Typography variant="h5" gutterBottom>
-            Contact Us
+            <Typography variant="body1" gutterBottom>
+              {t("contact_us.title")}
+            </Typography>{" "}
+          </Typography>
+          <Typography
+            variant="body1"
+            className="max-w-[300px] text-center"
+            gutterBottom
+          >
+            {t("contact_us.street")}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            123, Main Street, City, Country
+            {t("contact_us.phone")}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Phone: +123456789
-          </Typography>
-          <Typography variant="body1" gutterBottom>
-            Email: 0JQpK@example.com
+            {t("contact_us.email")}
           </Typography>
         </Grid>
       </Grid>
