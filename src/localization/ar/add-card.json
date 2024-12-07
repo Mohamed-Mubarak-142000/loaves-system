@@ -1,0 +1,62 @@
+{
+  "add_form": {
+    "title": "إضافة بطاقة",
+    "add_button": "إضافة بطاقة",
+    "all_cards": "جميع البطاقات",
+    "subtitle": "املأ النموذج أدناه لإضافة بطاقة جديدة"
+  },
+  "add_form_input": {
+    "firstname": "الاسم الأول",
+    "fristname_pleaceholder": "أدخل اسمك الأول",
+
+    "lastname": "الاسم الأخير",
+    "lastname_pleaceholder": "أدخل اسمك الأخير",
+
+    "phone": "رقم الهاتف",
+    "phone_pleaceholder": "أدخل رقم هاتفك",
+
+    "cardnumber": "رقم البطاقة",
+    "cardnumber_pleaceholder": "أدخل رقم بطاقتك",
+
+    "breadnumber": "عدد الأرغفة",
+    "breadnumber_pleaceholder": "أدخل عدد الأرغفة",
+
+    "breadsalary": "راتب الأرغفة",
+    "breadsalary_pleaceholder": "أدخل راتب الأرغفة",
+
+    "totalbread": "إجمالي الأرغفة",
+    "totalbread_pleaceholder": "أدخل اجمالي الأرغفة",
+    "deliveryservice": "خدمة التوصيل",
+    "deliveryservice_pleaceholder": "ادخل خدمة التوصيل",
+    "add_card": "إضافة بطاقة"
+  },
+
+  "validation_add_card": {
+    "firstname_required": "يجب تعبئة الاسم الأول",
+    "firstname_min_length": "يجب أن يتكون الاسم الأول من 10 أحرف على الأقل",
+    "firstname_max_length": "يجب أن يتكون الاسم الأول من 50 حرفًا على الأكثر",
+
+    "lastname_required": "يجب تعبئة الاسم الأخير",
+    "lastname_min_length": "يجب أن يتكون الاسم الأخير من 10 أحرف على الأقل",
+    "lastname_max_length": "يجب أن يتكون الاسم الأخير من 50 حرفًا على الأكثر",
+
+    "phone_required": "يجب تعبئة رقم الهاتف",
+    "phone_min_length": "يجب أن يتكون رقم الهاتف من 11 رقمًا على الأقل",
+    "phone_max_length": "يجب أن يتكون رقم الهاتف من 11 رقمًا على الأكثر",
+
+    "cardnumber_required": "يجب تعبئة رقم البطاقة",
+    "cardnumber_min_length": "يجب أن يتكون رقم البطاقة من 16 رقمًا على الأقل",
+    "cardnumber_max_length": "يجب أن يتكون رقم البطاقة من 16 رقمًا على الأكثر",
+
+    "breadnumber_required": "يجب تعبئة عدد الأرغفة",
+    "breadnumber_length": "يجب أن يكون عدد الأرغفة 5 أو مضاعفًا للعدد 5",
+
+    "breadsalary_required": "يجب تعبئة راتب الأرغفة",
+
+    "deliveryservice_required": "يجب تعبئة خدمة التوصيل",
+    "min_length_deliveryservice": "يجب أن يتكون خدمة التوصيل لا تقل عن 15 جنيه",
+    "max_length_deliveryservice": "يجب أن يتكون خدمة التوصيل لا تزيد عن 20 جنيه",
+
+    "totalbread_required": "يجب تعبئة إجمالي الأرغفة"
+  }
+}

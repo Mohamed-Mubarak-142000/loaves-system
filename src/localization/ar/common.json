@@ -9,6 +9,34 @@
     "signup": "إنشاء حساب"
   },
 
+  "welcome_to_app": {
+    "title": "مرحبًا بك في موقع خـــدمـتـك",
+    "subtitle": "خدمة توصيل خبز بلدي طازج لتسهيل حياتك اليومية",
+    "footer": "شكرا لاستخدام خدمتنا!"
+  },
+
+  "sidebar_nav": {
+    "overview_title": "نظرة عامة",
+    "overview": "نظرة عامة",
+
+    "cards_title": "جميع البطاقات",
+    "cards": "البطاقات",
+    "add_card": "إضافة بطاقة",
+
+    "users_title": "جميع المستخدمين",
+    "users": "المستخدمون",
+    "add_user": "إضافة مستخدم",
+
+    "roles_title": "الأدوار",
+    "roles": "الأدوار",
+    "add_role": "إضافة دور",
+
+    "logout": "تسجيل الخروج",
+    "history_title": "التاريخ",
+    "history_card": "تاريخ البطاقة",
+    "history_user": "تاريخ المستخدم"
+  },
+
   "theme_switcher": {
     "theme_toggle": "تبديل السمة",
     "light": "فاتح",

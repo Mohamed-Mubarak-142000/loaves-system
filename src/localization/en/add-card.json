@@ -1,0 +1,60 @@
+{
+  "add_form": {
+    "title": "Add Card",
+    "add_button": "Add Card",
+    "all_cards": "All Cards",
+    "subtitle": "Fill the form below to add a new card"
+  },
+  "add_form_input": {
+    "firstname": "First Name",
+    "fristname_pleaceholder": "Enter your first name",
+
+    "lastname": "Last Name",
+    "lastname_pleaceholder": "Enter your last name",
+
+    "phone": "Phone Number",
+    "phone_pleaceholder": "Enter your phone number",
+
+    "cardnumber": "Card Number",
+    "cardnumber_pleaceholder": "Enter your card number",
+
+    "breadnumber": "Bread Number",
+    "breadnumber_pleaceholder": "Enter your bread number",
+
+    "breadsalary": "Bread Salary",
+    "breadsalary_pleaceholder": "Enter your bread salary",
+
+    "totalbread": "Total Bread",
+    "totalbread_pleaceholder": "Enter your total bread",
+    "add_card": "Add Card"
+  },
+
+  "validation_add_card": {
+    "firstname_required": "First name must be filled",
+    "firstname_min_length": "First name must be at least 10 characters",
+    "firstname_max_length": "First name must be at most 50 characters",
+
+    "lastname_required": "Last name must be filled",
+    "lastname_min_length": "Last name must be at least 10 characters",
+    "lastname_max_length": "Last name must be at most 50 characters",
+
+    "phone_required": "Phone number must be filled",
+    "phone_min_length": "Phone number must be at least 11 characters",
+    "phone_max_length": "Phone number must be at most 11 characters",
+
+    "cardnumber_required": "Card number must be filled",
+    "cardnumber_min_length": "Card number must be at least 16 characters",
+    "cardnumber_max_length": "Card number must be at most 16 characters",
+
+    "breadnumber_required": "Bread number must be filled",
+    "breadnumber_length": "Bread number must be 5 or a multiple of 5",
+
+    "breadsalary_required": "Bread salary must be filled",
+
+    "deliveryservice_required": "يجب تعبئة خدمة التوصيل",
+    "min_length_deliveryservice": "Delivery service must be at least 15 EGP",
+    "max_length_deliveryservice": "Delivery service must be at most 20 EGP",
+
+    "totalbread_required": "Total bread must be filled"
+  }
+}

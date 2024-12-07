@@ -14,6 +14,10 @@ import arHome from "../../localization/ar/home.json";
 import enLogin from "../../localization/en/auth.json";
 import arLogin from "../../localization/ar/auth.json";
 
+//import add card
+import enAddCard from "../../localization/en/add-card.json";
+import arAddCard from "../../localization/ar/add-card.json";
+
 export const defaultNS = "common";
 
 export enum LANGUAGES {
@@ -33,11 +37,13 @@ i18next
         common: enCommon,
         home: enHome,
         auth: enLogin,
+        "add-card": enAddCard,
       },
       [LANGUAGES.AR]: {
         common: arCommon,
         home: arHome,
         auth: arLogin,
+        "add-card": arAddCard,
       },
     },
     interpolation: {

@@ -9,6 +9,34 @@
     "signup": "Signup"
   },
 
+  "welcome_to_app": {
+    "title": "Welcome to Khedmitk",
+    "subtitle": "A fresh baladi bread delivery service to make your daily life easier.",
+    "footer": "Thank you for using our service!"
+  },
+
+  "sidebar_nav": {
+    "overview_title": "Overview",
+    "overview": "Overview",
+
+    "cards_title": "Cards",
+    "cards": "All Cards",
+    "add_card": "Add Card",
+
+    "users_title": " Users",
+    "users": "All Users",
+    "add_user": "Add User",
+
+    "roles_title": "Roles",
+    "roles": "All Roles",
+    "add_role": "Add Role",
+
+    "logout": "Logout",
+    "history_title": "History",
+    "history_card": "History Card",
+    "history_user": "History User"
+  },
+
   "theme_switcher": {
     "theme_toggle": "Theme Switcher",
     "light": "Light",

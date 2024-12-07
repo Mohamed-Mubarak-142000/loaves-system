@@ -14,9 +14,11 @@ import { Button } from "@/components/ui/button";
 import { FormLoginSchema } from "../dto/auth-validation";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { ROUTE } from "@/routing";
 
 const LoginForm = () => {
   const { t } = useTranslation("auth");
+
   // 1. Define your form.
   const form = useForm<z.infer<typeof FormLoginSchema>>({
     resolver: zodResolver(FormLoginSchema),
@@ -29,6 +31,9 @@ const LoginForm = () => {
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof FormLoginSchema>) {
     console.log(values);
+    if (values.username === "admin" && values.password === "admin123") {
+      window.location.href = ROUTE.OVERVIEW;
+    }
   }
 
   return (

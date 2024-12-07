@@ -14,12 +14,11 @@ import { z } from "zod";
 import { ContactUs } from "../dto/contact-us-validation";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
 
 const ContactForm = () => {
   const { t } = useTranslation("auth");
-  // 1. Define your form.
+
   const form = useForm<z.infer<typeof ContactUs>>({
     resolver: zodResolver(ContactUs),
     defaultValues: {
@@ -30,7 +29,6 @@ const ContactForm = () => {
     },
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof ContactUs>) {
     console.log(values);
   }
@@ -115,10 +113,23 @@ const ContactForm = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="grid w-full gap-2"
         >
-          <Label htmlFor="message-2">{t("contact_us.message")}</Label>
-          <Textarea placeholder={t("contact_us.message_placeholder")} />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("contact_us.message")}</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder={t("contact_us.message_placeholder")}
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </motion.div>
 
         <motion.div

@@ -8,12 +8,29 @@ export enum ROUTE {
   PROFILE = "/profile",
   NOT_FOUND = "*",
   WELCOME = "/welcome",
-  OVERVIEW = "/overview",
   AUTH = "auth",
   page404 = "/404",
   FORGET = "reset-password",
   CONFIRM_PASSWORD = "confirm-password",
   ERRORS = "errors",
+
+  OVERVIEW = "/overview",
+
+  CARDS = "/cards",
+  ADDCARD = "/add-card",
+  EDITCARD = "/edit-card",
+
+  ADDUSER = "/add-user",
+  EDITUSER = "/edit-user",
+  USERS = "/users",
+
+  HISTORYUSER = "/history-user",
+  HISTORYCARD = "/history-card",
+
+  ROLE = "/role",
+  ADDROLE = "/add-role",
+  EDITROLE = "/edit-role",
+  ROLEUSER = "/role-user",
 }
 
 export enum AUTH_ROUTE {
@@ -35,6 +52,18 @@ type TArgs =
   | { path: ROUTE.ABOUT }
   | { path: ROUTE.CONTACT }
   | { path: ROUTE.FAQ }
+  | { path: ROUTE.CARDS }
+  | { path: ROUTE.ADDCARD }
+  | { path: ROUTE.EDITCARD }
+  | { path: ROUTE.ROLE }
+  | { path: ROUTE.ADDROLE }
+  | { path: ROUTE.EDITROLE }
+  | { path: ROUTE.ROLEUSER }
+  | { path: ROUTE.ADDUSER }
+  | { path: ROUTE.EDITUSER }
+  | { path: ROUTE.USERS }
+  | { path: ROUTE.HISTORYUSER }
+  | { path: ROUTE.HISTORYCARD }
   | { path: ROUTE.PROFILE; params: { userId: string } };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
